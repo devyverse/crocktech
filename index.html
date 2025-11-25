@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrockTech</title>
+    <link rel="icon" href="../assets/crocktech-V4.png" type="image/png">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script>
+function toggleMenu() {
+  const nav = document.getElementById("nav");
+  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+}
+</script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <div class="letter-bg"> 
+        <div class="letter">CROCKTECH</div>
+    </div>
+    <header class="menu-bar">
+                <div class="logo">
+                <img src="../assets/crocktech-V5.png" alt="CrockTech Logo" width="50" height="50">
+                    CrockTech
+                </div>
+                <div class="bar">
+                    <button class="menu-toggle" onclick="toggleMenu()"> MENU</button>
+                </div>
+    </header>
+    <nav class="fullscreen-nav" id="nav">
+        <ul>
+            <li><a href="#home" class="active">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#playground">PLAYGROUND</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+        
+    <section class="container-header">
+        <h1 class="title">L'esprit pionnier du digital</h1>
+        <p class ="ss-title">Comme Davy Crockett avec son chapeau embiématique, nous créons des solutions digitales simples , efficaces et adaptés aux entrepreneurs et pionniers modernes qui veulent franchit de nouvelles frontieres.</p>
+        <button class="btn-header">Découvrir</button>
+    </section>
+    <section class="portfolio-section">
+        <h2 class="h2-title">Porfolio</h2>
+        <div class="container-portfolio">
+            <div class="card-portfolio">
+                <img src="../assets/projet-image/projet.jpg" alt="Project 1"class = "img-projet">
+                <h3 class="title-card-portfolio">Entrepreneurs</h3>
+                <p class="description-card-portfolio">site vitrine entrepeneurs</p>
+            </div>
+            <div class="card-portfolio">
+                <img src="../assets/projet-image/projet.jpg" alt="Project 2" class = "img-projet">
+                <h3 class="title-card-portfolio">Artisans</h3>
+                <p class="description-card-portfolio">Site vitrine pour artisan</p>
+            </div>
+            <div class="card-portfolio">
+                <img src="../assets/projet-image/projet.jpg" alt="Project 3" class = "img-projet">
+                <h3 class="title-card-portfolio">Application mobile</h3>
+                <p class="description-card-portfolio"> App mobile pour facilité les utilisateurs </p>
+            </div>
+        </div>
+    </section>
+    <section class="services-section">
+        <h2 class="h2-title">Services</h2>
+        <div class="container-services">
+            <div class="card-service">
+                <h3>Audit et stratégie</h3>
+                <p>Analyse de vos besoins digitaux</p>
+            </div>
+            <div class="card-service">
+                <h3>Design et build</h3>
+                <p>Création de votre site  vitrine ou lading </p>
+            </div>
+            <div class="card-service">
+                <h3>Maintenance et conseils</h3>
+                <p>Suivi et optimisation de la performance</p>
+            </div>
+        </div>
+        <div class ="avis-section">
+            <h2 class="h2-title">Avis clients</h2>
+            <div class="card-avis">
+                <p>"Excellent service! Mon site web a été créé rapidement et efficacement."</p>
+                <h4>- Client Satisfait- </h4>
+            </div>
+            <div class="card-avis">
+                <p>"L'équipe a su comprendre mes besoins et m'a offert une solution sur mesure."</p>
+                <h4>- Entrepreneur Heureux -</h4>
+            </div>
+            <div class="card-avis">
+                <p>"Rapide, efficace et fiable"</p>
+                <h4>- Marte -</h4>
+        </div>
+    </section>
+    <section class="contact-section">
+        <h2 class="h2-title" >Contactez-nous</h2>
+        <form class="contact-form">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-section">
+        <div class="networking">
+            <span>Suivez-nous</span>
+            <a href="#">Facebook</a> 
+            <a href="#">Twitter</a> 
+            <a href="#">LinkedIn</a>
+            <span class="spacer"></span>
+        </div>
+        <div class="data-cgu">
+             <a href="#">CGU</a> 
+            <a href="#">Mentions Légales</a> 
+            <a href="#">Charte graphique</a>
+            <span class="spacer"></span>
+        </div>
+    </div>
+            <p>&copy; 2025 CrockTech - Tous droits réservés.</p>
+    </footer>
+    </body>
+    </html>
